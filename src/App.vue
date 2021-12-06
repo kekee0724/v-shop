@@ -5,7 +5,7 @@
 </template>
 
 <style lang="less">
-@import "~@styles/index.css";
+@import "~@static/styles/index.css";
 // @import '~@styles/variables.less';
 
 body {
