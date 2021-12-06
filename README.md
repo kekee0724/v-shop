@@ -94,7 +94,7 @@ https://m.mi.com/
 1. 引入`flexible` 用于设置 rem 基准值
 ```
 // main.js
-import './common/flexible'
+import './static/common/flexible'
 ```
 2. 安装 `postcss-pxtorem` 用于将单位转化为 rem
 

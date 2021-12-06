@@ -5,8 +5,8 @@ import store from './store'
 Vue.config.productionTip = false
 
 import 'vant/lib/index.css'
-import request from './common/request'
-import './common/flexible'
+import request from './static/common/request'
+import './static/common/flexible'
 
 // 引入 Vant 基础组件及弹窗
 import { Button, Cell, CellGroup, Icon, Row, Col, Popup, Toast, Dialog } from 'vant'
