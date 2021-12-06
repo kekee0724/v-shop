@@ -64,7 +64,7 @@ export default {
         const baseInfo = res.data.base
         this.userInfo = {
           ...res.data.base,
-          avatarUrl: baseInfo.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+          avatarUrl: baseInfo.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
           nick: baseInfo.nick || `${baseInfo.sourceStr}${baseInfo.id}`,
           mobile: baseInfo.mobile || ''
         }

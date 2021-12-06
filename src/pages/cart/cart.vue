@@ -48,7 +48,7 @@
     </div>
     <div class="no-data"
       v-else>
-      <img src="../../assets/no-cart.png"
+      <img src="../../static/images/no-cart.png"
         alt="">
       <div class="no-data-title">购物车快饿瘪了 T.T</div>
       <div class="no-data-txt">快给我挑点宝贝</div>

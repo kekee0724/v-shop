@@ -112,7 +112,7 @@ a {
   }
   &-title::before {
     content: "";
-    background: url(./assets/line_askew.png);
+    background: url(./static/images/line_askew.png);
     background-size: cover;
     width: 20px;
     height: 6px;
@@ -124,7 +124,7 @@ a {
   }
   &-title::after {
     content: "";
-    background: url(./assets/line_askew.png);
+    background: url(./static/images/line_askew.png);
     background-size: cover;
     width: 20px;
     height: 6px;

@@ -66,7 +66,7 @@ export default {
         }
         this.list = res.data.map(item => ({
           id: item.goods.id,
-          avatarUrl: item.user.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+          avatarUrl: item.user.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
           nickName: item.user.nickName || item.user.mobile.replace(item.user.mobile.substring(3, 7), '****'),
           rate: this.rate2star(item.goods.goodReputationStr),
           remark: item.goods.goodReputationRemark || '此用户没有填写评价',

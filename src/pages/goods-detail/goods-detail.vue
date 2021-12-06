@@ -122,7 +122,7 @@
     <van-popup v-model="showPopup" position="bottom">
       <div class="popup">
         <div class="service-desc">
-          <img src="../../assets/gif_1.gif" style="margin:20px auto;" />
+          <img src="../../static/images/gif_1.gif" style="margin:20px auto;" />
         </div>
         <van-button class="popup-confirm" type="danger" size="large" @click="onShowPopup">我知道了</van-button>
       </div>
@@ -581,7 +581,7 @@ export default {
         // user.avatarUrl
         this.reputation = {
           id: res.data[0].goods.id,
-          avatarUrl: res.data[0].user.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+          avatarUrl: res.data[0].user.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
           nickName: res.data[0].user.nickName || res.data[0].user.mobile.replace(res.data[0].user.mobile.substring(3, 7), '****'),
           rate: this.rate2star(res.data[0].goods.goodReputationStr),
           remark: res.data[0].goods.goodReputationRemark || '此用户没有填写评价',
@@ -784,7 +784,7 @@ export default {
                   const nowTime = Date.now()
                   this.pintuanList = res.data.result.map(item => ({
                     id: item.id,
-                    avatarUrl: item.apiExtUser.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+                    avatarUrl: item.apiExtUser.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
                     nick: item.apiExtUser.nick || '神秘用户',
                     time: Math.floor(((new Date(item.dateEnd.replace(/-/g, '/')).getTime()) - nowTime)),
                     number: set.numberPersion - item.helpNumber

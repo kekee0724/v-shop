@@ -180,12 +180,12 @@ export default {
         // res.data.kanjiaInfo.status  0 进行中，1 无效， 2 完成
         this.joiner = {
           nick: res.data.joiner.nick || '神秘用户',
-          avatarUrl: res.data.joiner.avatarUrl || `${require('@/assets/avatar_default.png')}`
+          avatarUrl: res.data.joiner.avatarUrl || `${require('@/static/images/avatar_default.png')}`
         }
         this.helps = res.data.helps.map(item => ({
           cutPrice: item.cutPrice,
           nick: item.nick || '神秘用户',
-          avatarUrl: item.avatarUrl || `${require('@/assets/avatar_default.png')}`
+          avatarUrl: item.avatarUrl || `${require('@/static/images/avatar_default.png')}`
         }))
 
         if (this.kanjiaInfo.uid !== storage.get('uid')) {
@@ -600,7 +600,7 @@ export default {
 .img-gold{
   width:88px;
   height:86px;
-  background:url(../../assets/mall_gold@2x.png) no-repeat;
+  background:url(../../static/images/mall_gold@2x.png) no-repeat;
   background-size:cover;
   margin:0 auto 20px;
 }

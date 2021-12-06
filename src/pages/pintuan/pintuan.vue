@@ -246,7 +246,7 @@ export default {
 
           this.joiners = res.data.map(item => ({
             nick: item.apiExtUserHelp.nick || '神秘用户',
-            avatarUrl: item.apiExtUserHelp.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+            avatarUrl: item.apiExtUserHelp.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
             dateAdd: item.dateAdd,
             uidHelp: item.uidHelp
           }))
@@ -685,7 +685,7 @@ export default {
 .img-gold{
   width:88px;
   height:86px;
-  background:url(../../assets/mall_gold@2x.png) no-repeat;
+  background:url(../../static/images/mall_gold@2x.png) no-repeat;
   background-size:cover;
   margin:0 auto 20px;
 }

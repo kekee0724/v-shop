@@ -48,7 +48,7 @@ export default {
 
         this.joiners = res.data.map(item => ({
           nick: item.apiExtUserHelp.nick || '神秘用户',
-          avatarUrl: item.apiExtUserHelp.avatarUrl || `${require('@/assets/avatar_default.png')}`,
+          avatarUrl: item.apiExtUserHelp.avatarUrl || `${require('@/static/images/avatar_default.png')}`,
           dateAdd: item.dateAdd,
           uidHelp: item.uidHelp
         })).reverse()
